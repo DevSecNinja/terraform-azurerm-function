@@ -24,7 +24,7 @@ resource "azurerm_linux_function_app" "function" {
   service_plan_id               = azurerm_service_plan.function.id
 
   app_settings = {
-    APPINSIGHTS_INSTRUMENTATIONKEY = "${azurerm_application_insights.function.instrumentation_key}"
+    APPINSIGHTS_INSTRUMENTATIONKEY = azurerm_application_insights.function.instrumentation_key
   }
 
   site_config {}
