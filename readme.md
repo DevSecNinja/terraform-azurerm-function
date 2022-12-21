@@ -15,6 +15,8 @@ This Terraform module allows you to easily create an Azure Function.
 To use this module, you will need to have an Azure account and access to the Azure CLI with Terraform installed.
 I heavily rely on the [terraform-azurerm-caf-enterprise-scale](https://github.com/Azure/terraform-azurerm-caf-enterprise-scale) and the [terraform-azurerm-lz-vending](https://github.com/Azure/terraform-azurerm-lz-vending) modules, hence some of the references to e.g. the management & connectivity subscriptions.
 
+After deploying the function, you can use the `function_app` output to create one or more `azurerm_function_app_function`s.
+
 > **_NOTE:_** I always suggest to use the `ref` argument to select a specific version.
 
 ```` terraform
