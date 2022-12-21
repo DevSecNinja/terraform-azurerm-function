@@ -33,10 +33,6 @@ module "yourApp" {
   policy_assignment_ids_to_exempt = [
     "/providers/Microsoft.Management/managementGroups/yourCompanyName-corp/providers/Microsoft.Authorization/policyAssignments/Deny-Public-Endpoints"
   ]
-
-  providers = {
-    azurerm              = azurerm.yourSubscription
-  }
 }
 ````
 
