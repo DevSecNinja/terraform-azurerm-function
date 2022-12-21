@@ -21,7 +21,8 @@ After deploying the function, you can use the `function_app` output to create on
 
 ```` terraform
 module "yourApp" {
-  source = "github.com/DevSecNinja/terraform-azurerm-function?ref=v0.1.0"
+  source  = "DevSecNinja/function/azurerm"
+  # version = "x.y.z" # Copy from Terraform registry
 
   ### Important
   purpose   = "yourApp"
